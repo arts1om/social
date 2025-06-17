@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
-import MobileMenu from "../MobileMenu";
+import MobileMenu from "./MobileMenu";
+import { FiUser } from "react-icons/fi";
 
 const Navbar = () => {
   return (
@@ -21,6 +24,7 @@ const Navbar = () => {
       </div>
       {/* RIGHT */}
       <div className="w-[30%] flex items-center gap-4 xl:gap-8 justify-end">
+        <FiUser className="text-gray-500 w-5 h-5 cursor-pointer" />
         <MobileMenu />
       </div>
     </div>
